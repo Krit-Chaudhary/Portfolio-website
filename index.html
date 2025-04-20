@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="home">
+            <div class="profile_name">
+                PORTFOLIO WEBSITE
+                <div style="clear:both;"></div>
+            </div>
+            <div class="topdiv">
+                <a class="topmenu" href="#about-me">About Me</a>
+                <a class="topmenu" href="#Skills">Skills</a>
+                <a class="topmenu" href="#Projects">Projects</a>
+                <a class="topmenu" href="#Recommendations">Recommendations</a>
+                <!-- Add the links for Skills, Projects and Recommendation here -->
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container about-me">
+        <div>
+            <h1>
+                Hi, I'm Krit Chaudhary!
+            </h1>
+            <p>
+                I am a Computer Science Engineering student specializing in AI-ML, with experience in cybersecurity, machine learning, and web development. Proficient in popular programming lamguages, I excel at building scalable and efficient solutions. I am passionate about solving complex technical challenges, optimizing machine learning models, and enhancing security systems. With a strong foundation in programming and data science, I aim to contribute innovative solutions to real-world problems.
+            </p>
+        </div>
+        <img src="./picture.jpeg" alt="Profile Image"  />
+    </section>
+
+    <!-- Skills -->
+    <section id="Skills">
+        <h2>Languages:</h2>
+        <div style="clear:both;"></div>
+
+        <div class="all_skills">
+            <div class="skill">
+                <img src="html.png" />
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill">
+                <img src="JavaScript.png" />
+                <h3>JavaScript</h3>
+            </div>
+
+
+            <div class="skill">
+                <img src="./CSS.png" />
+                <h3>CSS</h3>
+            </div>
+
+
+            <div class="skill">
+                <img src="python.jpeg" />
+                <h3>Python</h3>
+            </div>
+
+
+            <div class="skill">
+                <img src="C.png" />
+                <h3>C</h3>
+            </div>
+
+            <div class="skill">
+                <img src="cpp.png" />
+                <h3>C++</h3>
+            </div>
+            <!-- Add more skills here -->
+
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="Projects">
+        <h2>
+            Projects:
+        </h2>
+        <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Portfolio Website [HTML, CSS, JavaScript]</h3>
+                <ul>
+                    <li>Created an interactive portfolio website showcasing projects, skills, and Reviews.Integrated 
+                        interactive elements and dynamic content to enhance user engagement and effectively highlight 
+                        professional expertise. .</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Realistic image generator [Python, PyTorch, NumPy, StyleGAN3]</h3>
+                <ul>
+                    <li>Developed a robust image generation pipeline leveraging NVIDIA’s StyleGAN3 for high-resolution 
+                        synthetic image synthesis.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Real time Network Monitoring using Machiene Leraning[Python, HTML, CSS, JavaScript, scikit-learn]</h3>
+                <ul>
+                    <li>Built a real-time network monitoring and traffic classification system to detect and analyze 
+                        potential cyber-attacks. Implemented feature extraction and Machine learning classification 
+                        to identify normal and attack traffic (DoS, DDoS, Brute Force, Web, and Mirai) with 76% 
+                        accuracy.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="Recommendations">
+        <h2>Reviews:</h2>
+        <div style="clear:both;"></div>
+        <div class="all_recommendations" id="all_recommendations">
+            <div class="recommendation">
+                <span>&#8220;</span> Krit is very smart and grasps onto things which are related to web development so quickly that it saves a lot of time which helps us in make him learn new concepts which were useful for our company other than the basic
+                concepts taught to trainees.
+                <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+                <span>&#8220;</span> Krit not only has quick learning quirks but also has great leadership skill ,he wasnot only mentoring group at the same time learning related subjects which might be helpful too even the senior developers present here
+                .Inshort he has a great personality and helping nature.
+                <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+                <span>&#8220;</span> When it comes to experience he's the best ,I, once had worked with him he not only helped me in completeing my work also gave me few tips on how to get the work easily and fastly done.
+                <span>&#8221;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+        <div class="flex_center">
+            <fieldset>
+                <legend class="introduction">Leave a Recommendation</legend>
+                <input type="text" placeholder="Name (Optional)"> <br/>
+                <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+                <div class="flex_center">
+                    <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+
+    <div class="iconbutton">
+        <a href="#home">
+            <!-- Home icon SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="40px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9M4.5 10.5v9a1.5 1.5 0 001.5 1.5h3a1.5 1.5 0 001.5-1.5v-6h3v6a1.5 1.5 0 001.5 1.5h3a1.5 1.5 0 001.5-1.5v-9" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+        <img src="images.png/checkmark--outline.svg" />
+        <h3>Thanks for leaving a recommendation !</h3>
+        <button>Ok</button>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Contact Me</h3>
+                <p>Email: kritchaudhary912003@gmail.com</p>
+                <p>Phone: +91 8800713287</p>
+            </div>
+            <div class="footer-socials">
+                <h3>Follow Me</h3>
+                <a href="https://www.linkedin.com/in/krit-chaudhary-75bb32267/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Krit-Chaudhary" target="_blank">GitHub</a>
+                <a href="https://twitter.com/kritchaudhary" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
